@@ -8,4 +8,11 @@
 
 html,body{
     font-family: 'Roboto', sans-serif;
+    background-color: var(--main-color);
+}
+
+:root{
+    --main-color:#171d1e;
+    --secondary-color:#dcb030;
+    --accent-color:#d85c53;
 }
