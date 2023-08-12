@@ -20,12 +20,12 @@ export const Books:Book[]=[
     title:'Buddha: The Marvelous Sage',
     image:'assets/images/Buddha_The_Marvelous_Sage__60327.jpg'
 },
-{
-    title:'Babiloniyawe Kumariya Myra',
-    image:'assets/images/Babiloniyawe_Kumariya_Myra_-___00994.jpg'
-},
-{
-    title:'Veenasge Upatha',
-    image:'assets/images/Veenasge_Upatha_-_-_Shamel_Jayakodi__02786.jpg'
-},
+// {
+//     title:'Babiloniyawe Kumariya Myra',
+//     image:'assets/images/Babiloniyawe_Kumariya_Myra_-___00994.jpg'
+// },
+// {
+//     title:'Veenasge Upatha',
+//     image:'assets/images/Veenasge_Upatha_-_-_Shamel_Jayakodi__02786.jpg'
+// },
 ];
