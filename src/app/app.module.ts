@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
+import { MainComponent } from './main/main.component';
+import { BooksComponent } from './books/books.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    MainComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
