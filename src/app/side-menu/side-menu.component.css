@@ -39,6 +39,7 @@
     padding-left: 30px;
     cursor: pointer;
     outline: none;
+    color: var(--accent-color);
     &:hover,
     &:active{
         background-color: var(--secondary-color);
