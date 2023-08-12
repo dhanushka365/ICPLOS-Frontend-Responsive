@@ -12,4 +12,4 @@
         title:'Books',
         path: '/books'
     }
- ]
+ ];
