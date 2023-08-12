@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { SideMenuService } from '../side-menu.service';
+import { MenuItem, MenuItems } from '../menu-item.model';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-side-menu',
+  templateUrl: './side-menu.component.html',
+  styleUrls: ['./side-menu.component.css']
 })
-export class HeaderComponent implements OnInit {
-  
+export class SideMenuComponent implements OnInit{
   isOpen: boolean =false;
-
-  
+  menuItems: MenuItem[] = MenuItems;
   constructor(private sideMenuService: SideMenuService){}
 
   ngOnInit(): void {
@@ -20,13 +19,4 @@ export class HeaderComponent implements OnInit {
   close(){
     this.sideMenuService.close();
   }
-  
-  toggle(){
-    if (this.isOpen) {
-      this.sideMenuService.close();
-    }else{
-      this.sideMenuService.open();
-    }
-  }
-
 }
