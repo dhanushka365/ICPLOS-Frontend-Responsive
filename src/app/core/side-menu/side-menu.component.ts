@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SideMenuService } from '../side-menu.service';
-import { MenuItem, MenuItems } from '../menu-item.model';
+import { SideMenuService } from '../../side-menu.service';
+import { MenuItem, MenuItems } from '../../menu-item.model';
 
 @Component({
   selector: 'app-side-menu',
