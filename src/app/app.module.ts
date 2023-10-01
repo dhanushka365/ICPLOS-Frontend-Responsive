@@ -9,17 +9,26 @@ import { SideMenuComponent } from './core/side-menu/side-menu.component';
 import { MainComponent } from './main/main.component';
 import { BooksComponent } from './books/books.component';
 import { CoreModule } from './core/core.module';
+import { ShopComponent } from './shop/shop.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ShopModule } from './shop/shop.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    BooksComponent
+    BooksComponent,
+ 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    HttpClientModule,
+    ShopModule
+    
+    
+    
   
   ],
   providers: [],
