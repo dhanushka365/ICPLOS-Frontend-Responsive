@@ -29,7 +29,7 @@
 }
 
 
-.menu-item{
+.menu-item {
     font-size: 18px;
     height: 70px;
     display: flex;
@@ -40,10 +40,10 @@
     cursor: pointer;
     outline: none;
     color: var(--accent-color);
-    &:hover,
-    &:active{
-        background-color: var(--secondary-color);
-        color: var(--accent-color);
-    }
+}
 
+.menu-item:hover,
+.menu-item:active {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
 }
