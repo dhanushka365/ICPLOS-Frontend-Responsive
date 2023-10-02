@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -11,6 +12,7 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
     HeaderComponent,
     FooterComponent,
     SideMenuComponent,
+    ProfileComponent
   ],
   imports: [
     CommonModule,

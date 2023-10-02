@@ -39,7 +39,9 @@
     height: auto;
 }
 
-/* Add this CSS to your styles.css or a dedicated CSS file */
+.menu-button:hover {
+    opacity: 1;
+}
 
 .cart-no {
     position: relative;
@@ -51,7 +53,7 @@
     text-align: center;
     margin-left: -14px;
     z-index: 1;
-    top: -14px; /* Adjust the value to move the circle up */
+    top: -14px; 
     
     
 }
@@ -59,3 +61,57 @@
 .cart-container {
     position: relative;
 }
+
+
+.my-2.text-uppercase.fs-7 a {
+    color: #737272; 
+    text-decoration: none;
+    margin-right: 20px; 
+    transition: color 0.3s, background-color 0.3s; 
+    line-height: 40px;
+    text-size-adjust: 100%; 
+    font-size: 16px; 
+ }
+  
+.my-2.text-uppercase.fs-7 a:hover {
+    color: #fff; 
+    background-color: #8CC63E; 
+    padding: 5px 10px; 
+}
+
+.my-2.text-uppercase.fs-7 a.active {
+    color: #fff; 
+    background-color: #8CC63E; 
+    padding: 5px 10px; 
+}
+form.w-50 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    border-radius: 5px; 
+    padding: 5px; 
+  }
+  
+  form.w-50 input[type="search"] {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 8px; 
+    font-size: 16px; 
+  }
+  
+  form.w-50 button {
+    border: none;
+    background-color: #ff6600; 
+    color: #fff; 
+    padding: 8px 16px; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+  }
+  
+  form.w-50 button:hover {
+    background-color: #ff4500; 
+  }
+  

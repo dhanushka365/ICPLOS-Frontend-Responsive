@@ -23,25 +23,26 @@ app-footer {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 2; /* Place the footer above the side menu */
+    z-index: 2; 
 }
 
-/* Updated styles for the app-side-menu element */
+
+
 app-side-menu {
     position: fixed;
-    top: 70px; /* Adjust as needed to leave space for the header */
-    left: -340px; /* Move the side menu off-screen initially */
-    width: 340px; /* Set the width of the side menu */
-    height: 100%; /* Make it cover the full height of the viewport */
-    z-index: 1; /* Place the side menu below header and footer */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background color */
-    color: #fff; /* Text color */
-    transition: left 0.3s, background-color 0.3s; /* Add transitions for smooth animation */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    top: 70px; 
+    left: -340px; 
+    width: 340px;
+    height: 100%; 
+    z-index: 1; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff; 
+    transition: left 0.3s, background-color 0.3s; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Updated class to open the side menu */
+
 .side-menu-opened app-side-menu {
     left: 0;
-    background-color: rgba(0, 0, 0, 0.9); /* Darken the background when the menu is open */
+    background-color: rgba(0, 0, 0, 0.9); 
 }

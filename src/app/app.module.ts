@@ -7,11 +7,13 @@ import { MainComponent } from './main/main.component';
 import { CoreModule } from './core/core.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ShopModule } from './shop/shop.module';
+import { ProfileComponent } from './core/profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
+
 
  
   ],

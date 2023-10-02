@@ -1,0 +1,13 @@
+<div class="profile-dropdown">
+    <a href="#" (click)="toggleDropdown()" class="profile-link" [class.active]="isDropdownOpen">
+      <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+      <i class="fas fa-chevron-down"></i> <!-- FontAwesome down-chevron icon -->
+    </a>
+    <ul class="profile-menu" *ngIf="isDropdownOpen">
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><hr></li>
+      <li><a href="#">Sign out</a></li>
+    </ul>
+  </div>
+  
