@@ -10,6 +10,6 @@ export class ShopService {
   constructor( private http:HttpClient) { }
 
   getProducts(): Observable<Product[]>{
-    return this.http.get<Product[]>(this.baseUrl + 'Products');
+    return this.http.get<Product[]>(this.baseUrl + 'Products/admin/all');
   }
 }
