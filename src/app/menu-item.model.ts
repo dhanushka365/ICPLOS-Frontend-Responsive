@@ -9,7 +9,21 @@
         path: '/main'
     },
     {
-        title:'Books',
-        path: '/books'
+        title:'Menu',
+        path: '/menu'
+    },
+    {
+        title:'Orders',
+        path: '/orders'
+    }
+    ,
+    {
+        title:'Histroy',
+        path: '/histroy'
+    }
+    ,
+    {
+        title:'Support',
+        path: '/support'
     }
  ];

@@ -1,7 +1,7 @@
 .wrapper{
     background-color: var(--secondary-color);
     color: var(--accent-color);
-    height: 60px;
+    height: 40px;
     width: 100%;
     display: flex;
     font-size: 14px;
