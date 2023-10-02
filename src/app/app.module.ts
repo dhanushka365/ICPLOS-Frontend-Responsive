@@ -8,11 +8,13 @@ import { CoreModule } from './core/core.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ShopModule } from './shop/shop.module';
 import { ProfileComponent } from './core/profile/profile.component';
+import { AccountComponent } from './account/account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
+    AccountComponent,
 
 
  
