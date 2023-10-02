@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import {  User } from '../shared/models/user';
+import {  User,Root } from '../shared/models/user';
 import { BehaviorSubject, Observable, map } from 'rxjs';
 import { Router } from '@angular/router';
 
@@ -8,40 +8,41 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class AccountService {
+  
 
-  baseUrl = 'https://localhost:7184/api/';
+  baseUrl = 'https://localhost:7184/api/Auth/';
   private currentUserSource = new BehaviorSubject<User | null>(null);
   currentUser$ = this.currentUserSource.asObservable();
   constructor( private http:HttpClient, private router:Router ) { }
 
-  login(values:any){
-    return this.http.post<User>(this.baseUrl + 'login', values).pipe(
-      map(user => {
-          localStorage.setItem('token', user.accessToken);
-          console.log(user);
-          this.currentUserSource.next(user);
-        }     
-    ));
+  login(values: any): Observable<void> {
+    return this.http.post<Root>(this.baseUrl + 'login', values).pipe(
+      map((response: Root) => {
+        localStorage.setItem('token', response.accessToken);
+        this.currentUserSource.next(response.user);
+      })
+    );
   }
 
-  register(values:any){
-    return this.http.post<User>(this.baseUrl + 'register', values).pipe(
-      map(user => {
-          localStorage.setItem('token', user.accessToken);
-          console.log(user);
-          this.currentUserSource.next(user);
-        }     
-    ));
+
+  register(values: any): Observable<void> {
+    return this.http.post<Root>(this.baseUrl + 'register', values).pipe(
+      map((response: Root) => {
+        localStorage.setItem('token', response.accessToken);
+        this.currentUserSource.next(response.user);
+      })
+    );
   }
 
-  logout(){
+  logout(): void {
+
     localStorage.removeItem('token');
     this.currentUserSource.next(null);
-    this.router.navigateByUrl('/');
   }
 
-  checkEmailExists(email:string){
+
+  checkEmailExists(email: string): Observable<boolean> {
     return this.http.get<boolean>(this.baseUrl + 'emailexists?email=' + email);
   }
-  
+
 }
