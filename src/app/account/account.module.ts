@@ -11,7 +11,7 @@ import{AccountRoutingModule} from './account-routing.module';
     RegisterComponent
   ],
   imports: [
-    CommonModule,
+  
     AccountRoutingModule
   ]
 })
