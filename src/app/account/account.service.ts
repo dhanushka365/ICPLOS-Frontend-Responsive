@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {  User,Root } from '../shared/models/user';
 import { BehaviorSubject, Observable, map } from 'rxjs';
@@ -14,6 +14,17 @@ export class AccountService {
   private currentUserSource = new BehaviorSubject<User | null>(null);
   currentUser$ = this.currentUserSource.asObservable();
   constructor( private http:HttpClient, private router:Router ) { }
+
+  loadCurrentUser(token: string){
+     let headers = new HttpHeaders();
+     headers = headers.set('Authorization',`Bearer ${token}`);
+     return this.http.get<Root>(this.baseUrl+'',{headers}).pipe(
+      map((response: Root) => {
+        localStorage.setItem('token', response.accessToken);
+        this.currentUserSource.next(response.user);
+      })
+     )
+  }
 
   login(values: any): Observable<void> {
     return this.http.post<Root>(this.baseUrl + 'login', values).pipe(

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SideMenuService } from '../../side-menu.service';
+import { AccountService } from 'src/app/account/account.service';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,7 @@ export class HeaderComponent implements OnInit {
   isOpen: boolean =false;
   isSmallScreen: boolean = false;
   
-  constructor(private sideMenuService: SideMenuService){}
+  constructor(private sideMenuService: SideMenuService, public accountService:AccountService){}
 
   ngOnInit(): void {
       this.sideMenuService.isOpen.subscribe((isOpen) =>(this.isOpen =isOpen));

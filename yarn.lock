@@ -120,7 +120,7 @@
     ora "5.4.1"
     rxjs "7.8.1"
 
-"@angular/animations@^16.2.0", "@angular/animations@16.2.0":
+"@angular/animations@^16.0.0", "@angular/animations@^16.2.0", "@angular/animations@16.2.0":
   version "16.2.0"
   resolved "https://registry.npmjs.org/@angular/animations/-/animations-16.2.0.tgz"
   integrity sha512-SgOjldgRlU6XL1f6OUmFa+1iiy1OCWXH8i7q7g0yGCeQ4XAlvNRjDj++xxvUwDhE2pLKJLPYDJmCH98mvjKZcA==
@@ -151,7 +151,7 @@
     symbol-observable "4.0.0"
     yargs "17.7.2"
 
-"@angular/common@^16.2.0", "@angular/common@16.2.0":
+"@angular/common@^16.0.0", "@angular/common@^16.2.0", "@angular/common@16.2.0":
   version "16.2.0"
   resolved "https://registry.npmjs.org/@angular/common/-/common-16.2.0.tgz"
   integrity sha512-ByrDLsTBarzqRmq4GS841Ku0lvB4L2wfOCfGEIw2ZuiNbZlDA5O/qohQgJnHR5d9meVJnu9NgdbeyMzk90xZNg==
@@ -179,14 +179,14 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/core@^16.2.0", "@angular/core@16.2.0":
+"@angular/core@^16.0.0", "@angular/core@^16.2.0", "@angular/core@16.2.0":
   version "16.2.0"
   resolved "https://registry.npmjs.org/@angular/core/-/core-16.2.0.tgz"
   integrity sha512-iwUWFw+JmRxw0chcNoqhXVR8XUTE+Rszhy22iSCkK0Jo8IJqEad1d2dQoFu1QfqOVdPMZtpJDmC/ppQ/f5c5aA==
   dependencies:
     tslib "^2.3.0"
 
-"@angular/forms@^16.2.0":
+"@angular/forms@^16.0.0", "@angular/forms@^16.2.0":
   version "16.2.0"
   resolved "https://registry.npmjs.org/@angular/forms/-/forms-16.2.0.tgz"
   integrity sha512-Z/IFw319ZSgGbJFkR5Ba0sRIIqDxQDVH4I+vnVoOYqq2NxuHYfLJDHAB9uHln9GWj86b1SrJBZe8qiS7Sxb7yQ==
@@ -4521,6 +4521,13 @@ neo-async@^2.6.2:
   resolved "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
+ngx-bootstrap@^11.0.2:
+  version "11.0.2"
+  resolved "https://registry.npmjs.org/ngx-bootstrap/-/ngx-bootstrap-11.0.2.tgz"
+  integrity sha512-McvQ72XB6692Jus47jahWWwjpSCa6EtHMIqoyMewKCEHMv0ybDgVnOAdEsWKvwfulowHn7Y/jDjeiURwYJG9cQ==
+  dependencies:
+    tslib "^2.3.0"
+
 node-forge@^1:
   version "1.3.1"
   resolved "https://registry.npmjs.org/node-forge/-/node-forge-1.3.1.tgz"
@@ -5345,7 +5352,7 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-"rxjs@^6.5.3 || ^7.4.0", rxjs@^7.5.5, rxjs@~7.8.0, rxjs@7.8.1:
+"rxjs@^6.5.3 || ^7.4.0", "rxjs@^6.5.3 || ^7.6.0", rxjs@^7.5.5, rxjs@~7.8.0, rxjs@7.8.1:
   version "7.8.1"
   resolved "https://registry.npmjs.org/rxjs/-/rxjs-7.8.1.tgz"
   integrity sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==
