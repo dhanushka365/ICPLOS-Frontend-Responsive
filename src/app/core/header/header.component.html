@@ -3,11 +3,13 @@
         <img src="/assets/images/ICP-Logo-165X36.png" alt="logo" style="max-height: 80px;">
     </div>
     <nav class="my-2 text-uppercase fs-7" *ngIf="!isSmallScreen">
+        <ng-container *ngIf="accountService.currentUser$ | async as user">
         <a class="p-2 link-body-emphasis text-decoration-none" href="#">Home</a>
         <a class="p-2 link-body-emphasis text-decoration-none" href="#">Menu</a>
         <a class="p-2 link-body-emphasis text-decoration-none" href="#">Orders</a>
         <a class="p-2 link-body-emphasis text-decoration-none" href="#">History</a>
         <a class="p-2 link-body-emphasis text-decoration-none" href="#">Support</a>
+        </ng-container>
     </nav>
     <!-- <div class="d-flex align-items-center justify-content-end me-3" *ngIf="!isSmallScreen">
         <form class="w-50" role="search">
