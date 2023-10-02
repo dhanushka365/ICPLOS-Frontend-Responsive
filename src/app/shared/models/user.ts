@@ -1,8 +1,12 @@
-export interface User{
-    id: string;
-    name: string;
-    email: string;
-    password: string;
-    createdAt: string;
-    updatedAt: string;
+export interface User {
+    user: {
+        id: string;
+        name: string;
+        email: string;
+        phoneNumber: string;
+        avatar: any;
+      };
+      accessToken: string;
+      refreshToken: string;
 }
+  
