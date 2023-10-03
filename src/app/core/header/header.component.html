@@ -24,8 +24,8 @@
        
         <ng-container *ngIf="(accountService.currentUser$ | async)=== null">
             <div class="d-flex"> 
-                <a routerLink="/login" class="btn btn-outline-secondary me-1" href="#">Login</a>
-                <a routerLink="/register" class="btn btn-outline-secondary me-1" href="#">SignUp</a>
+                <a routerLink="/login" class="btn btn-primary me-1" href="#">Login</a>
+                <a routerLink="/register" class="btn btn-success me-1" href="#">SignUp</a>
             </div> 
             <div *ngIf="isSmallScreen" class="menu-button" (click)="toggle()">
                 <i class="fas fa-bars menu-icon"></i>
