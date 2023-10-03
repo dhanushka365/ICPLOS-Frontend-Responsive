@@ -28,10 +28,16 @@ export class AccountService {
 
   login(values: any): Observable<void> {
     return this.http.post<Root>(this.baseUrl + 'login', values).pipe(
-      map((response: Root) => {
-        localStorage.setItem('token', response.accessToken);
-        this.currentUserSource.next(response.user);
-      })
+      map(
+        (response: Root) => {
+          if (response.accessToken) {
+            localStorage.setItem('token', response.accessToken);
+            this.currentUserSource.next(response.user);
+          } else {
+            console.warn('Invalid username or password. Please check your credentials.');
+          }
+        }
+      )
     );
   }
 

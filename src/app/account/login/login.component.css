@@ -4,3 +4,34 @@
     align-items: center;
     height: 100vh; /* Adjust the height as needed */
 }
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: 
+    translate(-50%,-50%);
+    width: 450px;
+    min-height: 200px;
+    background: #b5ccb5;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box
+
+}
+
+     
+.user{
+        
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px
+}
+
+ 
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    color: #59238F;
+    text-align: center
+}

@@ -10,7 +10,8 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
  
-
+errorMessage: string = ''; // Variable to store the error message
+showError: boolean = false; // Boolean to control error message visibility
 loginForm = new FormGroup({ 
   email: new FormControl('', [Validators.required, Validators.email]),
   password: new FormControl('', Validators.required)
@@ -22,12 +23,15 @@ onSubmit() {
   this.accountService.login(this.loginForm.value).subscribe(
     {
       next: (response) => {
+        this.showError = false;
         console.log(response);
         this.router.navigateByUrl('/shop')
       },
       error: (error) => {
-        console.log(error);
-      },
+        this.showError = true;
+        this.errorMessage = 'Invalid username or password. Please check your credentials.';
+        console.error('Login error:', error);
+      }
     }
   );
  }
