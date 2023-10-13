@@ -11,15 +11,15 @@ export class ShopService {
 
   getProducts(): Observable<Product[]>{
 
-    const accessToken = localStorage.getItem('token');//Retrieve the access token from local storage
+    const accessToken = localStorage.getItem('token');
 
     console.log(accessToken);
 
     const headers = new HttpHeaders({
-      'Authorization': `Bearer ${accessToken}`// Create headers with the Authorization token
+      'Authorization': `Bearer ${accessToken}`
     });
 
-    const options = { headers: headers };// Include headers in the HTTP request
+    const options = { headers: headers };
     
     return this.http.get<Product[]>(this.baseUrl + 'Products/admin/all', options);
   }
